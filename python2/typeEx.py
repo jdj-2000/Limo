@@ -6,5 +6,10 @@ def main():
     abc = "this is string"
     print(abc, type(abc))
 
+    abc = "fstring"
+    number = 3.141592
+    #format -- f-string
+    print(f"string string {abc} pi : {number:.3}") # 
+
 if __name__ == "__main__":
     main()
