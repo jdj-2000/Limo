@@ -7,6 +7,9 @@ smart , vm install, vsCode install
 after
 git install
 
+
+again
+
 github auto update setup
 
 
