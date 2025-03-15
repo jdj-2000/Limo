@@ -12,4 +12,6 @@ again again
 
 github auto update setup
 
+파이썬 수업
+
 
