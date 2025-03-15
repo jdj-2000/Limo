@@ -1,13 +1,21 @@
 import datetime
+class Temp:
+    month = int()
+
 
 def main():
     now = datetime.datetime.now()
 
     if now.hour < 12:
-        print(f"현재 시각은 {now.hour} 시로 오전입니다.")
+        print(f"현재 시각은 {now.hour} 시로 오전입니다.")       
+
 
     if now.hour >= 12:
         print(f"현재 시각은 {now.hour} 시로 오후입니다.")
+
+    now = Temp()
+    now.month = 2
+    print(f"변경 날짜 {now.month}입니다.")
 
     if 2 < now.month < 6:#2,3,4,5
         print(f"이번 달은 {now.month} 월 이므로 봄입니다.")
