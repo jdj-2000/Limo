@@ -24,14 +24,14 @@ def print_n_times_keyword(value, *values, a=3, b=4, c=5):
 
 
 #가변 키워드 매개 변수
-def print_n_times_keyword_varible(value, *values, a=3, b=4, c=5, **kword):
-    print(type(kword)) #dictionary
+def print_n_times_keyword_varible(value, *values, a=3, b=4, c=5, **kwargd):
+    print(type(kwargd)) #dictionary
     for _ in range(a):
         print(a,b,c)
         print(value)
-        for v in value:
+        for v in values:
             print(values)
-    for k, v in kword.items():
+    for k, v in kwargd.items():
         print(k,v)
 
 
@@ -47,7 +47,6 @@ def main():
     print_n_times_keyword("안녕하세요.", 5, "abc", "def",a=6, b=7)
     print_n_times_keyword_varible("안녕하세요.", 5, "abc", "def",a=6, b=7, new="new 의 값")
     
-
 
 
 if __name__ == "__main__":
