@@ -13,7 +13,7 @@ def main():
     print(list_a)
 
     list_a.pop(1)
-    print(list_a)
+    print(list_a) 
 
     list_a.remove(3)
     print(list_a)
