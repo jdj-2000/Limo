@@ -10,7 +10,7 @@ def main():
     ptime = datetime.datetime.now()
     list_d= [1,2,3.3,"choi", False, ptime]
     print(list_d, list_d[3][2])  # 문자열 의 'o'을 출력하기 위해 인덱싱 할 수 있다.
-
+ 
 
 if __name__ == "__main__":
     main()
