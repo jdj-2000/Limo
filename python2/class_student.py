@@ -28,7 +28,7 @@ class Student:
         elif isinstance(value, int):
             return self.get_sum()== value
         else :
-            False
+            return ValueError("인타도 아니고 슽던트도 아님")
 
 
 def main():
@@ -48,16 +48,24 @@ def main():
 
     print(a)#str
 
+    try:
     #eq 을 재정의 해서 사용
-    if a == c:
-        print("a의 총점과 c의 총점이 같다.")
-    else:
-        print("a의 총점과 c의 총점이 다르다.")
+        if a == c:
+            print("a의 총점과 c의 총점이 같다.")
+        else:
+            print("a의 총점과 c의 총점이 다르다.")
 
-    if b == 75:
-        print("b의 총점과 75 이다.")
+        if b == 75:
+            print("b의 총점과 75 이다.")
+        else:
+             print("ab의 총점과 75 아니다.")
+    
+    except ValueError as e:
+        print("에러 발생", e)
+    except Exception:
+        print("Exception")
     else:
-        print("ab의 총점과 75 아니다.")
+        print("정상 작동했다.")
 
 
 
