@@ -1,5 +1,0 @@
-  File "/home/jdj/kuLimo/colcon_ws/install/hello_ros2/lib/python3.10/site-packages/hello_ros2/hello_ros.py", line 25
-    if __name__ '__main__':
-                ^^^^^^^^^^
-SyntaxError: invalid syntax
-
