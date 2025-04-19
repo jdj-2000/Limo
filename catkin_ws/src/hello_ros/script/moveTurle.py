@@ -1,24 +1,26 @@
+# cd kuLimo/catkin_ws/
 # catkin_make
-# roscore
-# rostopic echo /message
-# rostopic hz /message
-# rqt
+# source devel/setup.bash
+# rosrun hello_ros moveTurtle.py
 import rospy
-from std_msgs.msg import String
+from geometry_msgs.msg import Twist
 
 
 def main():
     rospy.init_node('hello', anonymous=True)
-    pub = rospy.Publisher('message', String, queue_size=10)
-    data = String()
-    i=0    
-    rate = rospy.Rate(3)
+    pub = rospy.Publisher('turtle1/cmd_vel', Twist, queue_size=10)
+    data = Twist()
+    data.angular.z = 3.0
+    velocity = 0.0
+
+    rate = rospy.Rate(10)
     while not rospy.is_shutdown():
-        data.data = f"hello, ROS! netic {i}"
+        data.linear.x = velocity
+        velocity += 0.1
+        if velocity > 10:
+            velocity = 0
         pub.publish(data)
-        print("hello, ROS1 noetic!!")
         rate.sleep()
-        i+=1
 
 if __name__ == "__main__":
     try:
