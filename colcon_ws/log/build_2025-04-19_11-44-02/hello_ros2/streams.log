@@ -1,0 +1,25 @@
+[0.539s] Invoking command in '/home/jdj/kuLimo/colcon_ws/src/hello_ros2': PYTHONPATH=/home/jdj/kuLimo/colcon_ws/build/hello_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jdj/kuLimo/colcon_ws/install/hello_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/hello_ros2 build --build-base /home/jdj/kuLimo/colcon_ws/build/hello_ros2/build install --record /home/jdj/kuLimo/colcon_ws/build/hello_ros2/install.log --single-version-externally-managed install_data
+[0.733s] running egg_info
+[0.733s] writing ../../build/hello_ros2/hello_ros2.egg-info/PKG-INFO
+[0.733s] writing dependency_links to ../../build/hello_ros2/hello_ros2.egg-info/dependency_links.txt
+[0.734s] writing entry points to ../../build/hello_ros2/hello_ros2.egg-info/entry_points.txt
+[0.735s] writing requirements to ../../build/hello_ros2/hello_ros2.egg-info/requires.txt
+[0.735s] writing top-level names to ../../build/hello_ros2/hello_ros2.egg-info/top_level.txt
+[0.735s] reading manifest file '../../build/hello_ros2/hello_ros2.egg-info/SOURCES.txt'
+[0.736s] writing manifest file '../../build/hello_ros2/hello_ros2.egg-info/SOURCES.txt'
+[0.736s] running build
+[0.736s] running build_py
+[0.736s] copying hello_ros2/move_turtle.py -> /home/jdj/kuLimo/colcon_ws/build/hello_ros2/build/lib/hello_ros2
+[0.737s] running install
+[0.737s] running install_lib
+[0.737s] copying /home/jdj/kuLimo/colcon_ws/build/hello_ros2/build/lib/hello_ros2/move_turtle.py -> /home/jdj/kuLimo/colcon_ws/install/hello_ros2/lib/python3.10/site-packages/hello_ros2
+[0.738s] byte-compiling /home/jdj/kuLimo/colcon_ws/install/hello_ros2/lib/python3.10/site-packages/hello_ros2/move_turtle.py to move_turtle.cpython-310.pyc
+[0.739s] running install_data
+[0.739s] running install_egg_info
+[0.740s] removing '/home/jdj/kuLimo/colcon_ws/install/hello_ros2/lib/python3.10/site-packages/hello_ros2-0.0.0-py3.10.egg-info' (and everything under it)
+[0.740s] Copying ../../build/hello_ros2/hello_ros2.egg-info to /home/jdj/kuLimo/colcon_ws/install/hello_ros2/lib/python3.10/site-packages/hello_ros2-0.0.0-py3.10.egg-info
+[0.741s] running install_scripts
+[0.758s] Installing hello_ros script to /home/jdj/kuLimo/colcon_ws/install/hello_ros2/lib/hello_ros2
+[0.758s] Installing move_turtle script to /home/jdj/kuLimo/colcon_ws/install/hello_ros2/lib/hello_ros2
+[0.759s] writing list of installed files to '/home/jdj/kuLimo/colcon_ws/build/hello_ros2/install.log'
+[0.776s] Invoked command in '/home/jdj/kuLimo/colcon_ws/src/hello_ros2' returned '0': PYTHONPATH=/home/jdj/kuLimo/colcon_ws/build/hello_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jdj/kuLimo/colcon_ws/install/hello_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/hello_ros2 build --build-base /home/jdj/kuLimo/colcon_ws/build/hello_ros2/build install --record /home/jdj/kuLimo/colcon_ws/build/hello_ros2/install.log --single-version-externally-managed install_data
