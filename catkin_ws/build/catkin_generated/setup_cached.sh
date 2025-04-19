@@ -7,5 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export PKG_CONFIG_PATH="/root/catkin_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PWD='/root/catkin_ws/build'
+export PWD='/root/Limo/catkin_ws/build'

@@ -1,4 +1,4 @@
-prefix=/root/catkin_ws/devel
+prefix=/root/Limo/catkin_ws/devel
 
 Name: hello_ros
 Description: Description of hello_ros

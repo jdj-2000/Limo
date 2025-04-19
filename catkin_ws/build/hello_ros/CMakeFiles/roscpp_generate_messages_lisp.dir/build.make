@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/catkin_ws/src
+CMAKE_SOURCE_DIR = /root/Limo/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/catkin_ws/build
+CMAKE_BINARY_DIR = /root/Limo/catkin_ws/build
 
 # Utility rule file for roscpp_generate_messages_lisp.
 
@@ -63,10 +63,10 @@ hello_ros/CMakeFiles/roscpp_generate_messages_lisp.dir/build: roscpp_generate_me
 .PHONY : hello_ros/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 
 hello_ros/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
-	cd /root/catkin_ws/build/hello_ros && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /root/Limo/catkin_ws/build/hello_ros && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : hello_ros/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 
 hello_ros/CMakeFiles/roscpp_generate_messages_lisp.dir/depend:
-	cd /root/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/catkin_ws/src /root/catkin_ws/src/hello_ros /root/catkin_ws/build /root/catkin_ws/build/hello_ros /root/catkin_ws/build/hello_ros/CMakeFiles/roscpp_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/Limo/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/Limo/catkin_ws/src /root/Limo/catkin_ws/src/hello_ros /root/Limo/catkin_ws/build /root/Limo/catkin_ws/build/hello_ros /root/Limo/catkin_ws/build/hello_ros/CMakeFiles/roscpp_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : hello_ros/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
 

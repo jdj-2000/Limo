@@ -1,8 +1,8 @@
-# Install script for directory: /root/catkin_ws/src/hello_ros
+# Install script for directory: /root/Limo/catkin_ws/src/hello_ros
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/root/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/root/Limo/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,21 +38,25 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/root/catkin_ws/build/hello_ros/catkin_generated/installspace/hello_ros.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/root/Limo/catkin_ws/build/hello_ros/catkin_generated/installspace/hello_ros.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hello_ros/cmake" TYPE FILE FILES
-    "/root/catkin_ws/build/hello_ros/catkin_generated/installspace/hello_rosConfig.cmake"
-    "/root/catkin_ws/build/hello_ros/catkin_generated/installspace/hello_rosConfig-version.cmake"
+    "/root/Limo/catkin_ws/build/hello_ros/catkin_generated/installspace/hello_rosConfig.cmake"
+    "/root/Limo/catkin_ws/build/hello_ros/catkin_generated/installspace/hello_rosConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hello_ros" TYPE FILE FILES "/root/catkin_ws/src/hello_ros/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hello_ros" TYPE FILE FILES "/root/Limo/catkin_ws/src/hello_ros/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hello_ros" TYPE PROGRAM FILES "/root/catkin_ws/build/hello_ros/catkin_generated/installspace/hello.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hello_ros" TYPE PROGRAM FILES "/root/Limo/catkin_ws/build/hello_ros/catkin_generated/installspace/hello.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hello_ros" TYPE PROGRAM FILES "/root/Limo/catkin_ws/build/hello_ros/catkin_generated/installspace/moveTurtle.py")
 endif()
 

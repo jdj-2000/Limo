@@ -2,6 +2,8 @@
 # catkin_make
 # source devel/setup.bash
 # rosrun hello_ros moveTurtle.py
+#! /usr/bin/python3
+
 import rospy
 from geometry_msgs.msg import Twist
 
