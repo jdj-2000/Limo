@@ -12,6 +12,7 @@ hello_ros2/__init__.py
 hello_ros2/hello_ros.py
 hello_ros2/move_turtle.py
 hello_ros2/simple_pub.py
+hello_ros2/simple_service_server.py
 hello_ros2/simple_sub.py
 launch/message.launch.py
 resource/hello_ros2
