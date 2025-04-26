@@ -15,6 +15,7 @@ class ServiceServer:
         response = SetBoolResponse()
         thread = threading.Thread(target=self.async_service_hd, args=(request, response))
         thread.start()
+        thread.join()
         return response
     
     def async_service_hd(self, request, response):

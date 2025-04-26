@@ -118,6 +118,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/root/Limo/catkin_ws/src/hello_ros/scripts/msub2"
   "/root/Limo/catkin_ws/src/hello_ros/scripts/mtpub"
   "/root/Limo/catkin_ws/src/hello_ros/scripts/mtsub"
+  "/root/Limo/catkin_ws/src/hello_ros/scripts/simpleServiceClient"
   "/root/Limo/catkin_ws/src/hello_ros/scripts/simpleServiceServer"
   "/root/Limo/catkin_ws/src/hello_ros/setup.py"
   "/usr/share/cmake-3.16/Modules/CMakeCInformation.cmake"
