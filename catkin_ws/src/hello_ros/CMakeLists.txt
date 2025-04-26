@@ -12,13 +12,22 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
 )
 
+catkin_python_setup()
+
 catkin_package()
 
 catkin_install_python(PROGRAMS
-  scripts/hello.py
-  scripts/moveTurtle.py
+  scripts/hello
+  scripts/moveTurtle
+  scripts/mtpub
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
+
+install(DIRECTORY
+  launch
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+)
+
 
 include_directories(
   ${catkin_INCLUDE_DIRS}
