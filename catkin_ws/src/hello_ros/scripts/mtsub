@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+#rosrun hello_ros mtsub
+
 import rospy
 from std_msgs.msg import Header
 
