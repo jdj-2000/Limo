@@ -114,6 +114,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/root/Limo/catkin_ws/src/hello_ros/scripts/hello"
   "/root/Limo/catkin_ws/src/hello_ros/scripts/moveTurtle"
   "/root/Limo/catkin_ws/src/hello_ros/scripts/mtpub"
+  "/root/Limo/catkin_ws/src/hello_ros/scripts/mtsub"
   "/root/Limo/catkin_ws/src/hello_ros/setup.py"
   "/usr/share/cmake-3.16/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake"
