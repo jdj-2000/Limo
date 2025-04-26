@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /root/Limo/catkin_ws/install/setup.sh
