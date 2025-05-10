@@ -9,6 +9,7 @@ setup.py
 ../../build/hello_ros2/hello_ros2.egg-info/top_level.txt
 ../../build/hello_ros2/hello_ros2.egg-info/zip-safe
 hello_ros2/__init__.py
+hello_ros2/change_color_client.py
 hello_ros2/hello_ros.py
 hello_ros2/move_turtle.py
 hello_ros2/simple_parameter.py
@@ -18,6 +19,8 @@ hello_ros2/simple_service_server.py
 hello_ros2/simple_service_server2.py
 hello_ros2/simple_sub.py
 launch/message.launch.py
+launch/moveTurtle.launch.py
+param/turtlesim.yaml
 resource/hello_ros2
 test/test_copyright.py
 test/test_flake8.py
