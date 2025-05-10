@@ -11,6 +11,7 @@ setup.py
 hello_ros2/__init__.py
 hello_ros2/hello_ros.py
 hello_ros2/move_turtle.py
+hello_ros2/simple_parameter.py
 hello_ros2/simple_pub.py
 hello_ros2/simple_service_client.py
 hello_ros2/simple_service_server.py
