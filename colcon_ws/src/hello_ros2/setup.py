@@ -27,7 +27,9 @@ setup(
             'move_turtle = hello_ros2.move_turtle:main',
             'simple_sub = hello_ros2.simple_sub:main',
             'simple_pub = hello_ros2.simple_pub:main',
-            'simple_service_server = hello_ros2.simple_service_server:main'
+            "simple_service_server = hello_ros2.simple_service_server:main",
+            "simple_service_server2 = hello_ros2.simple_service_server2:main",
+            "simple_service_client = hello_ros2.simple_service_client:main",
         ],
     },
 )
