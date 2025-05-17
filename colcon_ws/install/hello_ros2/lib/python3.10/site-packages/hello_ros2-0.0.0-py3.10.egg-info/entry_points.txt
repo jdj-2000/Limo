@@ -2,6 +2,7 @@
 change_color_client = hello_ros2.change_color_client:main
 hello_ros = hello_ros2.hello_ros:main
 move_turtle = hello_ros2.move_turtle:main
+my_topic_pub = hello_ros2.my_topic_pub:main
 simple_parameter = hello_ros2.simple_parameter:main
 simple_pub = hello_ros2.simple_pub:main
 simple_service_client = hello_ros2.simple_service_client:main
