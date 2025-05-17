@@ -10,9 +10,17 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  message_generation
 )
 
 catkin_python_setup()
+
+add_message_files(
+  FILES
+  MyTopic.msg
+)
+
+generate_messages()
 
 catkin_package()
 
@@ -27,11 +35,15 @@ catkin_install_python(PROGRAMS
   scripts/simpleServiceServer
   scripts/simpleServiceClient
   scripts/simpleServiceClient2
+  scripts/simpleParameter
+  scripts/myTopicPub
+  scripts/myTopicSub
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
 install(DIRECTORY
   launch
+  param
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
 
