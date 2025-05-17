@@ -66,6 +66,22 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hello_ros/action" TYPE FILE FILES "/root/Limo/catkin_ws/src/hello_ros/action/TimeWait.action")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hello_ros/msg" TYPE FILE FILES
+    "/root/Limo/catkin_ws/devel/share/hello_ros/msg/TimeWaitAction.msg"
+    "/root/Limo/catkin_ws/devel/share/hello_ros/msg/TimeWaitActionGoal.msg"
+    "/root/Limo/catkin_ws/devel/share/hello_ros/msg/TimeWaitActionResult.msg"
+    "/root/Limo/catkin_ws/devel/share/hello_ros/msg/TimeWaitActionFeedback.msg"
+    "/root/Limo/catkin_ws/devel/share/hello_ros/msg/TimeWaitGoal.msg"
+    "/root/Limo/catkin_ws/devel/share/hello_ros/msg/TimeWaitResult.msg"
+    "/root/Limo/catkin_ws/devel/share/hello_ros/msg/TimeWaitFeedback.msg"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hello_ros/cmake" TYPE FILE FILES "/root/Limo/catkin_ws/build/hello_ros/catkin_generated/installspace/hello_ros-msg-paths.cmake")
 endif()
 
@@ -174,6 +190,14 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hello_ros" TYPE PROGRAM FILES "/root/Limo/catkin_ws/build/hello_ros/catkin_generated/installspace/addClient")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hello_ros" TYPE PROGRAM FILES "/root/Limo/catkin_ws/build/hello_ros/catkin_generated/installspace/timeActionServer")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hello_ros" TYPE PROGRAM FILES "/root/Limo/catkin_ws/build/hello_ros/catkin_generated/installspace/timeActionClient")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
