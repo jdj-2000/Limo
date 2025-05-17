@@ -26,6 +26,9 @@ class ActionClient:
 
         # 비동기적 처리 코드 ... callback...
 
+
+        
+
 def main():
     rospy.init_node("action_client")
     node = ActionClient()
