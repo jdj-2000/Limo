@@ -1,4 +1,5 @@
 [console_scripts]
+add_server = hello_ros2.add_server:main
 change_color_client = hello_ros2.change_color_client:main
 hello_ros = hello_ros2.hello_ros:main
 move_turtle = hello_ros2.move_turtle:main
