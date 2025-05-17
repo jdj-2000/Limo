@@ -9,6 +9,8 @@ setup.py
 ../../build/hello_ros2/hello_ros2.egg-info/top_level.txt
 ../../build/hello_ros2/hello_ros2.egg-info/zip-safe
 hello_ros2/__init__.py
+hello_ros2/action_client.py
+hello_ros2/action_server.py
 hello_ros2/add_server.py
 hello_ros2/change_color_client.py
 hello_ros2/hello_ros.py
