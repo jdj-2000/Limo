@@ -177,7 +177,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(hello_ros_EXPORTED_TARGETS "hello_ros_generate_messages_cpp;hello_ros_generate_messages_eus;hello_ros_generate_messages_lisp;hello_ros_generate_messages_nodejs;hello_ros_generate_messages_py")
+set(hello_ros_EXPORTED_TARGETS "hello_ros_gencfg;hello_ros_generate_messages_cpp;hello_ros_generate_messages_eus;hello_ros_generate_messages_lisp;hello_ros_generate_messages_nodejs;hello_ros_generate_messages_py")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${hello_ros_EXPORTED_TARGETS})
   if(NOT TARGET ${t})

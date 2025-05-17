@@ -6,6 +6,7 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(hello_ros)
 find_package(catkin REQUIRED COMPONENTS
+  dynamic_reconfigure
   geometry_msgs
   roscpp
   rospy
@@ -15,12 +16,26 @@ find_package(catkin REQUIRED COMPONENTS
 
 catkin_python_setup()
 
+generate_dynamic_reconfigure_options(
+  cfg/SimpleParameter.cfg
+  cfg/Turtle.cfg
+)
+
 add_message_files(
   FILES
   MyTopic.msg
 )
 
-generate_messages()
+add_service_files(
+  FILES
+  AddTwoInts.srv
+)
+
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+)
+
 
 catkin_package()
 
@@ -38,6 +53,8 @@ catkin_install_python(PROGRAMS
   scripts/simpleParameter
   scripts/myTopicPub
   scripts/myTopicSub
+  scripts/addServer
+  scripts/addClient
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
@@ -46,7 +63,6 @@ install(DIRECTORY
   param
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
-
 
 include_directories(
   ${catkin_INCLUDE_DIRS}
