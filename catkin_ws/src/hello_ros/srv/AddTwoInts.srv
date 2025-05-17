@@ -1,0 +1,10 @@
+
+#토픽만 사용할 수 있는 선언
+Header head
+int64 a
+int64 b
+string op
+---
+bool success
+int64 result
+string message
