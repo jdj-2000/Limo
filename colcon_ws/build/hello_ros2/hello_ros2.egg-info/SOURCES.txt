@@ -14,6 +14,7 @@ hello_ros2/action_server.py
 hello_ros2/add_server.py
 hello_ros2/change_color_client.py
 hello_ros2/hello_ros.py
+hello_ros2/move_limo.py
 hello_ros2/move_turtle.py
 hello_ros2/my_topic_pub.py
 hello_ros2/simple_parameter.py
