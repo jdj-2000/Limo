@@ -17,6 +17,7 @@ hello_ros2/hello_ros.py
 hello_ros2/move_limo.py
 hello_ros2/move_turtle.py
 hello_ros2/my_topic_pub.py
+hello_ros2/publish_map.py
 hello_ros2/simple_parameter.py
 hello_ros2/simple_pub.py
 hello_ros2/simple_service_client.py

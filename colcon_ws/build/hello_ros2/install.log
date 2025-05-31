@@ -4,6 +4,7 @@
 /home/jdj/kuLimo/colcon_ws/install/hello_ros2/lib/python3.10/site-packages/hello_ros2/change_color_client.py
 /home/jdj/kuLimo/colcon_ws/install/hello_ros2/lib/python3.10/site-packages/hello_ros2/action_client.py
 /home/jdj/kuLimo/colcon_ws/install/hello_ros2/lib/python3.10/site-packages/hello_ros2/move_turtle.py
+/home/jdj/kuLimo/colcon_ws/install/hello_ros2/lib/python3.10/site-packages/hello_ros2/publish_map.py
 /home/jdj/kuLimo/colcon_ws/install/hello_ros2/lib/python3.10/site-packages/hello_ros2/my_topic_pub.py
 /home/jdj/kuLimo/colcon_ws/install/hello_ros2/lib/python3.10/site-packages/hello_ros2/simple_service_server2.py
 /home/jdj/kuLimo/colcon_ws/install/hello_ros2/lib/python3.10/site-packages/hello_ros2/hello_ros.py
@@ -19,6 +20,7 @@
 /home/jdj/kuLimo/colcon_ws/install/hello_ros2/lib/python3.10/site-packages/hello_ros2/__pycache__/change_color_client.cpython-310.pyc
 /home/jdj/kuLimo/colcon_ws/install/hello_ros2/lib/python3.10/site-packages/hello_ros2/__pycache__/action_client.cpython-310.pyc
 /home/jdj/kuLimo/colcon_ws/install/hello_ros2/lib/python3.10/site-packages/hello_ros2/__pycache__/move_turtle.cpython-310.pyc
+/home/jdj/kuLimo/colcon_ws/install/hello_ros2/lib/python3.10/site-packages/hello_ros2/__pycache__/publish_map.cpython-310.pyc
 /home/jdj/kuLimo/colcon_ws/install/hello_ros2/lib/python3.10/site-packages/hello_ros2/__pycache__/my_topic_pub.cpython-310.pyc
 /home/jdj/kuLimo/colcon_ws/install/hello_ros2/lib/python3.10/site-packages/hello_ros2/__pycache__/simple_service_server2.cpython-310.pyc
 /home/jdj/kuLimo/colcon_ws/install/hello_ros2/lib/python3.10/site-packages/hello_ros2/__pycache__/hello_ros.cpython-310.pyc
@@ -48,6 +50,7 @@
 /home/jdj/kuLimo/colcon_ws/install/hello_ros2/lib/hello_ros2/move_limo
 /home/jdj/kuLimo/colcon_ws/install/hello_ros2/lib/hello_ros2/move_turtle
 /home/jdj/kuLimo/colcon_ws/install/hello_ros2/lib/hello_ros2/my_topic_pub
+/home/jdj/kuLimo/colcon_ws/install/hello_ros2/lib/hello_ros2/publish_map
 /home/jdj/kuLimo/colcon_ws/install/hello_ros2/lib/hello_ros2/simple_parameter
 /home/jdj/kuLimo/colcon_ws/install/hello_ros2/lib/hello_ros2/simple_pub
 /home/jdj/kuLimo/colcon_ws/install/hello_ros2/lib/hello_ros2/simple_service_client
