@@ -5,6 +5,7 @@
 # ros2 run turtlesim turtle_teleop_key
 
 import rclpy
+import math
 from geometry_msgs.msg import TransformStamped, Twist
 from rclpy import time
 from rclpy.node import Node
@@ -74,6 +75,7 @@ class Follow_turtle(Node):
         self.get_logger().info(f"{t.transform.translation.y}")
         self.get_logger().info(f"{t.transform.translation.z}")
         msg = Twist()
+        #움직이는 부분,
         angular = euler_from_quaternion(
             (
                 t.transform.rotation.x,
@@ -82,10 +84,17 @@ class Follow_turtle(Node):
                 t.transform.rotation.w,
             )
         )
-        msg.angular.x = angular[0]
-        msg.angular.y = angular[1]
-        msg.angular.z = angular[2]
-        msg.linear.x = t.transform.translation.x + t.transform.translation.y
+        msg.angular.x = 0.0
+        msg.angular.y = 0.0
+        if math.atan2(t.transform.translation.x, t.transform.translation.y) - angular[2] < 0:
+            msg.angular.z = 2.0
+        else:
+            msg.angular.z = -2.0
+
+        if t.transform.translation.x**2 + t.transform.translation.y**2 > 0.1:
+           msg.linear.x = 3.0
+        else:
+            msg.linear.x = 0.0
         self.pub.publish(msg)
 
 
