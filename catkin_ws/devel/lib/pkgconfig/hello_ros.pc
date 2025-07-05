@@ -1,8 +1,8 @@
-prefix=/root/Limo/catkin_ws/devel
+prefix=/home/sejongtp04/Limo/catkin_ws/devel
 
 Name: hello_ros
 Description: Description of hello_ros
 Version: 0.0.0
-Cflags: -I/root/Limo/catkin_ws/devel/include
+Cflags: -I/home/sejongtp04/Limo/catkin_ws/devel/include
 Libs: -L${prefix}/lib 
 Requires: 

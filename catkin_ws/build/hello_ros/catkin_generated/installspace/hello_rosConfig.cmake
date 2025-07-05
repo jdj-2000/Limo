@@ -67,14 +67,14 @@ set(hello_ros_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(hello_ros_SOURCE_PREFIX /root/Limo/catkin_ws/src/hello_ros)
-  set(hello_ros_DEVEL_PREFIX /root/Limo/catkin_ws/devel)
+  set(hello_ros_SOURCE_PREFIX /home/sejongtp04/Limo/catkin_ws/src/hello_ros)
+  set(hello_ros_DEVEL_PREFIX /home/sejongtp04/Limo/catkin_ws/devel)
   set(hello_ros_INSTALL_PREFIX "")
   set(hello_ros_PREFIX ${hello_ros_DEVEL_PREFIX})
 else()
   set(hello_ros_SOURCE_PREFIX "")
   set(hello_ros_DEVEL_PREFIX "")
-  set(hello_ros_INSTALL_PREFIX /root/Limo/catkin_ws/install)
+  set(hello_ros_INSTALL_PREFIX /home/sejongtp04/Limo/catkin_ws/install)
   set(hello_ros_PREFIX ${hello_ros_INSTALL_PREFIX})
 endif()
 
@@ -118,7 +118,7 @@ endif()
 
 set(libraries "")
 foreach(library ${libraries})
-  # keep build configuration keywords, target names and absolute libraries as-is
+  # keep build configuration keywords, generator expressions, target names, and absolute libraries as-is
   if("${library}" MATCHES "^(debug|optimized|general)$")
     list(APPEND hello_ros_LIBRARIES ${library})
   elseif(${library} MATCHES "^-l")
@@ -146,6 +146,8 @@ foreach(library ${libraries})
       target_link_options("${interface_target_name}" INTERFACE "${library}")
     endif()
     list(APPEND hello_ros_LIBRARIES "${interface_target_name}")
+  elseif(${library} MATCHES "^\\$<")
+    list(APPEND hello_ros_LIBRARIES ${library})
   elseif(TARGET ${library})
     list(APPEND hello_ros_LIBRARIES ${library})
   elseif(IS_ABSOLUTE ${library})
@@ -154,7 +156,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /root/Limo/catkin_ws/install/lib;/root/Limo/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/sejongtp04/Limo/catkin_ws/install/lib;/home/sejongtp04/Limo/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

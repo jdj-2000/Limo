@@ -1,4 +1,4 @@
-prefix=/root/Limo/catkin_ws/install
+prefix=/home/sejongtp04/Limo/catkin_ws/install
 
 Name: hello_ros
 Description: Description of hello_ros

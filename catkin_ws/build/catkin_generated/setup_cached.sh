@@ -7,4 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/root/Limo/catkin_ws/build'
+export PWD='/home/sejongtp04/Limo/catkin_ws/build'
