@@ -1,0 +1,8 @@
+prefix=/home/sejongtp04/Limo/catkin_ws/install
+
+Name: limo_application
+Description: Description of limo_application
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

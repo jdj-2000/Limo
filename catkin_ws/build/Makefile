@@ -1701,6 +1701,32 @@ limo_base_node/fast:
 	$(MAKE) -f limo_ros/limo_base/CMakeFiles/limo_base_node.dir/build.make limo_ros/limo_base/CMakeFiles/limo_base_node.dir/build
 .PHONY : limo_base_node/fast
 
+#=============================================================================
+# Target rules for targets named turtlebot3_drive
+
+# Build rule for target.
+turtlebot3_drive: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 turtlebot3_drive
+.PHONY : turtlebot3_drive
+
+# fast build rule for target.
+turtlebot3_drive/fast:
+	$(MAKE) -f turtlebot3_simulations/turtlebot3_gazebo/CMakeFiles/turtlebot3_drive.dir/build.make turtlebot3_simulations/turtlebot3_gazebo/CMakeFiles/turtlebot3_drive.dir/build
+.PHONY : turtlebot3_drive/fast
+
+#=============================================================================
+# Target rules for targets named gazebo_ros_gencfg
+
+# Build rule for target.
+gazebo_ros_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_gencfg
+.PHONY : gazebo_ros_gencfg
+
+# fast build rule for target.
+gazebo_ros_gencfg/fast:
+	$(MAKE) -f turtlebot3_simulations/turtlebot3_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/build.make turtlebot3_simulations/turtlebot3_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/build
+.PHONY : gazebo_ros_gencfg/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1832,6 +1858,8 @@ help:
 	@echo "... limo_base_gennodejs"
 	@echo "... limo_base_generate_messages_py"
 	@echo "... limo_base_node"
+	@echo "... turtlebot3_drive"
+	@echo "... gazebo_ros_gencfg"
 .PHONY : help
 
 

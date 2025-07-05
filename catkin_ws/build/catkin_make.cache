@@ -1,2 +1,2 @@
-hello_ros:limo_application:limo_gazebo_sim:limo_ros/limo_base:limo_ros/limo_bringup:limo_ros/limo_description
+hello_ros:limo_application:limo_gazebo_sim:limo_ros/limo_base:limo_ros/limo_bringup:limo_ros/limo_description:turtlebot3_simulations/turtlebot3_gazebo:turtlebot3_simulations/turtlebot3_simulations
 -DCATKIN_DEVEL_PREFIX=/home/sejongtp04/Limo/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/sejongtp04/Limo/catkin_ws/install -G Unix Makefiles
